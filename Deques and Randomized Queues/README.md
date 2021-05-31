@@ -34,3 +34,6 @@ public Item dequeue() {
         return item;
     }
 ```
+4. How to make each iterator maintain its own order?  
+I copy all the elements in the queue to a new array `sequence[]`, and then randomly dequeue it. In this way, each iterator maintain its own order, and also the original array will not be modified.
+
