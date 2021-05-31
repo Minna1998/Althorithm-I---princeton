@@ -8,7 +8,7 @@
 |**Memory per iterator**|Constant|Linear in current # of items|
 # Deque  
 ## data structure
-resizing array: resize() is a linear-time funtion
-single-linked list: AddLast() and MoveFirst() will not be constant time
-so I choose **Double-linkded list**
+resizing array: resize() is a linear-time funtion  
+single-linked list: AddLast() and MoveFirst() will not be constant time  
+so I choose **Double-linkded list**  
 
