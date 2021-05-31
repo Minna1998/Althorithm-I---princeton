@@ -12,5 +12,5 @@
 2. single-linked list: AddLast() and MoveFirst() will not be constant time  
 so I choose **Double-linkded list**  
 ## implementation
-1. To make 'size()' and 'isEmpty()' cost constant time, add a variant 'n' in the constructor, standing for the number of elements in the deque.
+1. To make `size()` and `isEmpty()` cost constant time, add a variant `n` in the constructor, standing for the number of elements in the deque.
 
