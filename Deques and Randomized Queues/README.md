@@ -16,3 +16,6 @@ so I choose **Double-linkded list**
 2. `first/last` is the pointer to the first/last element. If deque is empty, then first = last = null; if `size() = 1`, then first = last.  
 # Randomized Queue
 ## data structure
+`dequeue()`, `sample()` and `iterator()` are required to choose element randomly by using `StdRandom.uniform()`, so we can only use resizing array as the data structure.
+## implementation
+
