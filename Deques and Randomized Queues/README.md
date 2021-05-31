@@ -21,9 +21,9 @@ so I choose **Double-linkded list**
 1. I use the simplest resizing array, without any head or tail index. It is because `dequeue()`, `sample()` and `iterator()` are required to choose element randomly, and I don't need to care about where is the first element of the queue.  
 2. To make it easier, I try to keep all the elements tight instead of allowing `null` between any two of them. Otherwise, I need to judge whether the random elements chosed in `dequeue()`, `sample()` and `iterator()` are not `null`, and if it is, I also need to loop to find the next available elements in the queue, which leads to fails in timing tests.
 3. How to keep every elements tight?  
->> In `dequeue()`, for example, I delete a element `dq[i]` randomly, then let `dq[i] = dq[n-1]`.
->> ```
->> public Item dequeue() {
+ In `dequeue()`, for example, I delete a element `dq[i]` randomly, then let `dq[i] = dq[n-1]`.
+ ```
+public Item dequeue() {
         if (isEmpty()) throw new NoSuchElementException();
         int index = StdRandom.uniform(n);
         Item item = randomque[index];
@@ -33,4 +33,4 @@ so I choose **Double-linkded list**
         if (n > 0 && n == randomque.length/4) resize(randomque.length/2);
         return item;
     }
->>```
+```
